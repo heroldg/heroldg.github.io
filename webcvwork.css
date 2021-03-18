@@ -132,3 +132,25 @@ main {
     transition: 1s;
     color: gray;
 }
+@media (max-width:900px){
+    .photocoupletrip {
+        width: 80vw;
+        height: 55vh;
+    }
+
+    #photocoupletrip {
+        height: 300vh;
+    }
+}
+
+@media (max-height:800px){
+    .photocoupletrip {
+        height: 40vh;
+    }
+}
+
+@media (max-height:500px){
+    .photocoupletrip {
+        height: 25vh;
+    }
+}
