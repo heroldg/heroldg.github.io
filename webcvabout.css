@@ -230,6 +230,14 @@ span:hover{
     animation-delay: 2.4s;
 }
 
+@media (max-width:950px){
+    .items {
+        flex-direction: column;
+    }
+    a {
+        margin-bottom: 15px;
+    }
+}
 
 
 
