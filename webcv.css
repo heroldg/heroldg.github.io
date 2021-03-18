@@ -1,0 +1,163 @@
+* {
+    font-family: 'Syne', sans-serif;
+    margin: 0pt;
+}
+
+.cursor {
+    width: 70px;
+    height: 70px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    animation: Anim1 1s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10px;
+    height: 10px;
+    background: rgb(87, 87, 87);
+    border-radius: 50%;
+}
+
+.expand {
+    animation: Anim2 .5s;
+    background: rgb(219, 193, 198);
+    border: 1px solid rgb(214, 178, 185);
+}
+@keyframes Anim1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.7) rotate(190deg);
+    }
+}
+
+@keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+}
+
+body {
+    background-color:rgb(206, 198, 182);
+    transition: 0.7s;
+    cursor: none;
+}
+
+.bodyblack {
+    transition: 0.7s;
+    background-color: black;
+    color: aliceblue;
+}
+
+header {
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+}
+
+.textgrey {
+    color: gray;
+}
+ 
+#navbar {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(206, 198, 182);
+    transition:  0.7s;
+    cursor:none;
+}
+
+p {
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+}
+
+
+
+#about {
+    width: 35vw;
+    height: 50%;
+    font-size: 8vw;
+}
+
+#about:hover {
+    color: gray;
+    font-size: 9vw;
+    transition: 0.7s;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    cursor: none;
+}
+
+#work {
+    width: 35vw;
+    height: 50%;
+    font-size: 8vw;
+}
+
+#work:hover {
+    color: gray;
+    font-size: 9vw;
+    transition: 0.7s;
+}
+
+
+#contact {
+    width: 50vw;
+    height: 50%;
+    font-size: 8vw;
+}
+
+#contact:hover {
+    color: gray;
+    font-size: 9vw;
+    transition: 0.7s;
+}
+
+.trait {
+    width: 5vw;
+    height: 45%;
+    font-size: 3vw;
+    margin-top: 40px;
+
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar {
+    height: 0;
+    background: transparent;
+}
+
+
