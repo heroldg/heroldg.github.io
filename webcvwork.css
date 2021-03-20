@@ -17,7 +17,7 @@ header {
 
 nav {
     color: cornsilk;
-    margin-left: 30px;
+    margin-left: 10px;
     
 }
 
@@ -96,7 +96,7 @@ main {
     font-size: 5vw;
     transition: 0.5s;
     margin-bottom: 20px;
-    margin-left: 250px;
+    margin-left: 100px;
 }
 
 .worklink:hover {

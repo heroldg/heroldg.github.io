@@ -237,6 +237,10 @@ span:hover{
     a {
         margin-bottom: 15px;
     }
+
+    nav {
+        margin-left: 2px;
+    }
 }
 
 
