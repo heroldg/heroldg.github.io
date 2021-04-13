@@ -23,11 +23,11 @@ header {
 
 nav {
     color: cornsilk;
-    margin-left: 30px;
+    margin-left: 10px;
     
 }
 
-header {
+header {  
     width: 20%;
     height: 100vh;
     animation: bodynav ease-in-out;
