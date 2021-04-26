@@ -30,3 +30,14 @@ document.addEventListener('click', ()=>{
     }, 500);
 })
 
+function scrollAbout () {
+    window.scrollBy(-10,0)   
+}
+
+function scrollWork () {
+    window.scrollBy(-10,0)
+}
+
+function scrollContact () {
+    window.scrollBy(10,0)
+}
