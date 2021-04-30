@@ -1,0 +1,102 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+body {
+    background: linear-gradient(70deg ,rgba(6, 88, 99, 0.493),52%,rgb(123, 72, 165));
+}
+ 
+ul {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-collapse: separate;
+    border-radius: 5px;
+    justify-content: flex-start;
+    align-items:flex-start;
+    left: -450px;
+    opacity: 0;
+    position:absolute;
+    transition: 0.9s;
+    font-size: 45px;
+    background: linear-gradient(70deg,#BA9CAB,60%,rgba(52, 208, 255, 0.37));
+    opacity: 60%;
+    list-style-type: none;
+}
+
+li {
+    font-size: 40px;
+    transition: 00.6s;
+}
+
+li:hover {
+    color: rgb(35, 52, 85);
+    text-shadow: 7px 6px 9px 0px cornflowerblue;
+    transition: 0.9s;
+    font-size: 49px;
+    
+}
+
+
+input {
+    visibility: hidden;
+}
+
+label {
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+label:hover {
+    opacity: 60%;
+    
+}
+
+ul:hover {
+    border-radius: 15px;
+}
+
+.parcourir:checked ~ .menu {
+    left: 40px;
+    transition: 1.9s;
+    opacity: 90%;
+    height: 15%;
+    width: 85%;
+    font-size: 15px;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+span:hover {
+    color:cornflowerblue;
+}
+
+#exit {
+    color: rgba(255, 0, 0, 0.575);
+    opacity: 50%;
+}
+
+#exit:hover {
+    opacity: 90%;
+}
+
+@media (max-width: 950px) {
+    .parcourir:checked ~ .menu{
+    left: 40px;
+    transition: 1.9s;
+    opacity: 90%;
+    height: 70%;
+    width: 70%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    }
+    li {
+        font-size: 15;
+    }
+}
+
