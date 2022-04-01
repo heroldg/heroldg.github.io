@@ -177,14 +177,18 @@ footer a:hover {
         text-align: center;
         height: 10vh;
     }
+
+    .trait {
+        display: none;
+    }
+
+    #about, #work, #contact {
+        padding-left: 40px;
+        padding-top: 40px;
+    
+    }
     
 
-    p a {
-        position: relative;
-        text-align: right;
-        margin-left: 40vw;
-        margin-bottom: 30vh;
-    }
 }
 
 
