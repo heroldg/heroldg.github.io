@@ -1,6 +1,5 @@
 * {
     font-family: 'Syne', sans-serif;
-    margin: 0;
 }
 
 .cursor {
@@ -99,6 +98,10 @@ p {
     width: 100vw;
 }
 
+ #linkedin {
+    padding-top: 50px;
+}
+
 a {
     text-decoration: none;
     color: unset;
@@ -170,7 +173,7 @@ footer a:hover {
 
 @media screen and (max-width :800px ) {
     #navbar {
-        display: block;
+        display: inline-block;
         text-align: center;
         height: 10vh;
     }
