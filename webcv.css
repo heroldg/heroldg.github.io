@@ -52,7 +52,7 @@
 }
 
 body {
-    background-color:rgb(206, 198, 182);
+    background-color:#cec6b6;
     transition: 0.7s;
     cursor: none;
 }
@@ -60,7 +60,7 @@ body {
 .bodyblack {
     transition: 0.7s;
     background-color: black;
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 .bodyblack a {
@@ -87,7 +87,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(206, 198, 182);
+    background-color: #cec6b6;
     transition:  0.7s;
     cursor:none;
 }

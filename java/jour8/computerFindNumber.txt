@@ -1,0 +1,31 @@
+   /*
+         * while (nextStep != "=") {
+         * 
+         * switch (nextStep) {
+         * case "-":
+         * System.out.println("Je tente " + (car - varation)
+         * + ", est-ce plus, moins ou est-ce le nombre(+/-/=) ?(car:" + car + ";
+         * varitation:"
+         * + varation + ")");
+         * car = car - varation;
+         * nextStep = console.nextLine();
+         * break;
+         * 
+         * case "+":
+         * System.out.println(
+         * "Je tente " + (car + varation) + ", est-ce plus, moins ou est-ce le
+         * nombre(+/-/=) ?(car:"
+         * + car + "; varitation:" + varation + ")");
+         * car = car + varation;
+         * 
+         * nextStep = console.nextLine();
+         * 
+         * break;
+         * 
+         * default:
+         * 
+         * break;
+         * }
+         * tour++;
+         * }
+         */
