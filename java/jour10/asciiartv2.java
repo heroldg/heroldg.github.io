@@ -7,14 +7,11 @@ public class asciiartv2 {
         Scanner console = new Scanner(System.in);
         int taille;
         String caractere;
-        String espace = " ";
         int forme = 0;
-        int nbEspaces;
 
-        System.out.println("Taille ?");
+        System.out.println("Taille ? [entre 3 et 100]");
         taille = console.nextInt();
 
-        nbEspaces = espace.length() * (taille - 2);
         System.out.println("Caractère ?");
         caractere = console.next();
 
@@ -46,6 +43,8 @@ public class asciiartv2 {
                     System.out.println("4 - triangle rectangle");
                     System.out.println("5 - losange rectangle");
                     System.out.println("6 - damier");
+                    System.out.println("7 - Quitter cette magnifique application");
+
                     forme = console.nextInt();
 
                     break;
@@ -58,7 +57,10 @@ public class asciiartv2 {
                     System.out.println();
 
                     for (int i = 0; i < taille - 2; i++) {
-                        System.out.println(caractere + espace + caractere);
+                        System.out.printf("%s%s%s%n", caractere,
+                                "                                                                                                  "
+                                        .substring(0, taille - 2),
+                                caractere);
 
                     }
 
@@ -74,6 +76,69 @@ public class asciiartv2 {
                     System.out.println("4 - triangle rectangle");
                     System.out.println("5 - losange rectangle");
                     System.out.println("6 - damier");
+                    System.out.println("7 - Quitter cette magnifique application");
+
+                    forme = console.nextInt();
+
+                    break;
+                case 3:
+
+                    System.out.println(caractere);
+
+                    for (int i = 0; i < taille - 2; i++) {
+                        System.out.printf("%s%s%s%n", caractere,
+                                "                                                                                                  "
+                                        .substring(0, i),
+                                caractere);
+
+                    }
+
+                    for (int m = 0; m < taille; m++) {
+                        System.out.print(caractere);
+                    }
+
+                    System.out.println("");
+                    System.out.println("Forme ?");
+                    System.out.println("1 - rectangle plein");
+                    System.out.println("2 - rectangle creux");
+                    System.out.println("3 - triangle rectangle");
+                    System.out.println("4 - croix de Saint-André");
+                    System.out.println("5 - losange rectangle");
+                    System.out.println("6 - damier");
+                    System.out.println("7 - Quitter cette magnifique application");
+
+                    forme = console.nextInt();
+
+                    break;
+                case 4:
+                    for (int i = 0; i <= taille; i++) {
+                        System.out.printf("%s%s%s%n", caractere,
+                                "                                                                                                  "
+                                        .substring(0, i),
+
+                                caractere);
+
+                    }
+                    ;
+                    for (int a = taille; 0 <= taille; a--) {
+                        System.out.printf("%s%s%s%n", caractere,
+                                " "
+                                        .substring(0, a),
+
+                                caractere);
+
+                    }
+
+                    System.out.println("");
+                    System.out.println("Forme ?");
+                    System.out.println("1 - rectangle plein");
+                    System.out.println("2 - rectangle creux");
+                    System.out.println("3 - triangle rectangle");
+                    System.out.println("4 - croix de Saint-André");
+                    System.out.println("5 - losange rectangle");
+                    System.out.println("6 - damier");
+                    System.out.println("7 - Quitter cette magnifique application");
+
                     forme = console.nextInt();
 
                     break;
@@ -82,5 +147,7 @@ public class asciiartv2 {
                     break;
             }
         }
+        System.out.println("Au revoir !  ");
+        console.close();
     }
 }
