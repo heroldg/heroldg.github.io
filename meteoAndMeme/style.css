@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(117, 71, 83);
+}
+
+#gif-result {
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gif img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+#search-gif {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+    margin: auto;
+}
+
+#search-meteo {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+    margin: auto;
+}
+
+#search-meteo #buttonMeteo , #buttonGif {
+    
+    border-radius:  10px;
+    background-color: azure;
+}
+
+#meteo-result {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: 5px;
+    padding: 1pc;
+}
+
+#meteo-result div {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: wheat;
+    margin: auto;
+}
