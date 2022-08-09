@@ -7,8 +7,8 @@ function afficheLeResultat(json) {
     let html = '';
     for(let i = 0; i < json.data.length; i++) {
         html += `
-        <div  class="gif">
-            <img src="${json.data[i].images.original.url}">
+        <div class="gif">
+        <img src="${json.data[i].images.original.url}">
         </div>`;
     }
     divResult.innerHTML = html;
