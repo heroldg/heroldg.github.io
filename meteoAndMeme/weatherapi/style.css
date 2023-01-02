@@ -1,0 +1,32 @@
+
+
+body {
+    background-color: rgba(34, 92, 139, 0.658);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#meteo-result {
+    text-align: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: cornflowerblue;
+    height: 250px;
+}
+
+
+#meteo-forecast {
+    margin: 10px;
+}
+
+#meteo-forecast-result {
+    gap: 10px;
+    text-align: center;
+}
+
+#search-meteo {
+    padding-top: 10px;
+    gap: 2px;
+    display: flex;
+    justify-content: center;
+}
