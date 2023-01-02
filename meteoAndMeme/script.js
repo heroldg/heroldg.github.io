@@ -42,25 +42,25 @@ buttonGif.onclick = function () {
 
 // const mafonction = () => "hello";
 
-const buttonMeteo = document.querySelector('#buttonMeteo');
-const inputCity = document.querySelector('#city');
-const meteoDiv = document.querySelector('#meteo-result');
+// const buttonMeteo = document.querySelector('#buttonMeteo');
+// const inputCity = document.querySelector('#city');
+// const meteoDiv = document.querySelector('#meteo-result');
 
-buttonMeteo.onclick = function () {
-    fetch('https://goweather.herokuapp.com/weather/' + inputCity.value)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (json) {
-            let html = `
-                <div>
-                    Aujourd'hui: ${json.description} ${json.temperature}<br>
-                    Demain: ${json.forecast[0].temperature}<br>
-                    Dans 2 jours: ${json.forecast[1].temperature}<br>
-                    Dans 3 jours: ${json.forecast[2].temperature}
-                </div>
-            `;
-            meteoDiv.innerHTML = html;
-        });
-};
+// buttonMeteo.onclick = function () {
+//     fetch('https://goweather.herokuapp.com/weather/' + inputCity.value)
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (json) {
+//             let html = `
+//                 <div>
+//                     Aujourd'hui: ${json.description} ${json.temperature}<br>
+//                     Demain: ${json.forecast[0].temperature}<br>
+//                     Dans 2 jours: ${json.forecast[1].temperature}<br>
+//                     Dans 3 jours: ${json.forecast[2].temperature}
+//                 </div>
+//             `;
+//             meteoDiv.innerHTML = html;
+//         });
+// };
 
