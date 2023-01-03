@@ -8,7 +8,7 @@ const meteoForecastDiv = document.querySelector('#meteo-forecast');
 buttonMeteo.onclick = function () {
 
     // TODAY RESULT
-    fetch('http://api.weatherapi.com/v1/current.json?key=0809a88a72264e0f8dd221409222612&q=' + inputCity.value).then(function (response) {
+    fetch('https://api.weatherapi.com/v1/current.json?key=0809a88a72264e0f8dd221409222612&q=' + inputCity.value).then(function (response) {
         return response.json();
     })
         .then(function (json) {
@@ -30,7 +30,7 @@ buttonMeteo.onclick = function () {
         })
 
 
-    fetch('http://api.weatherapi.com/v1/forecast.json?key=0809a88a72264e0f8dd221409222612&q=' + inputCity.value).then(
+    fetch('https://api.weatherapi.com/v1/forecast.json?key=0809a88a72264e0f8dd221409222612&q=' + inputCity.value).then(
         function (response) {
             return response.json();
         }
@@ -52,7 +52,7 @@ buttonMeteo.onclick = function () {
    
 
     // FORECAST RESULT
-    fetch('http://api.weatherapi.com/v1/forecast.json?key=0809a88a72264e0f8dd221409222612&q=' + inputCity.value + '&days=10').then(
+    fetch('https://api.weatherapi.com/v1/forecast.json?key=0809a88a72264e0f8dd221409222612&q=' + inputCity.value + '&days=10').then(
         function (response) {
             return response.json();
         }
