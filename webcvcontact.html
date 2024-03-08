@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACT</title>
-    <link rel="stylesheet" href="webcvcontact.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="img/logotest.jfif" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="webcvcontact.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="img/logotest.jfif" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="buttonback">
-            <div id="clickback"> <a href="index.html">...</a></div>
-        </div>
-        <nav>Herold Guervil
-            <br>
-            <br>
-            <br>
-            WORK
-        </nav>
+      <div id="buttonback">
+        <div id="clickback"><a href="index.html">...</a></div>
+      </div>
     </header>
     <main>
-        <p id="contact">Contact</p> <br> <br>
-        <form action="https://formspree.io/f/xoqrqond" method="POST">
-            <fieldset>
-                <label>
-                    Your email: <br>
-                    <input type="email" name="_replyto" cols="30">
-                </label>
-                <br>
-            </fieldset>
-            <label>
-                Your message: <br>
-                <textarea name="message" cols="30" rows="10"></textarea>
-                <br>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
-        </form>
+      <h1>Contact</h1>
+      <article>
+        <p>
+          🇫🇷 Merci de votre visite, n'hésitez pas à me contacter en utilisant le
+          formulaire ci-dessous pour discuter des opportunités de travail ou de
+          projets.
+        </p>
+        <hr />
+        <p>
+          🇬🇧🇺🇸🇦🇺 Thank you for visiting, please feel free to reach out to me
+          using the contact form below to discuss potential work opportunities
+          or projects.
+        </p>
+      </article>
+      <br />
+      <form action="https://formspree.io/f/xoqrqond" method="POST">
+        <label>
+          Your email <br />
+          <input type="email" name="_replyto" cols="35" required />
+        </label>
+        <br />
+        <label>
+          Your message <br />
+          <textarea name="message" cols="30" rows="15"></textarea>
+          <br />
+        </label>
+        <!-- your other form fields go here -->
+        <button class="submit" type="submit">Send</button>
+      </form>
     </main>
 
     <script src="webcvabout"></script>
-</body>
-
+  </body>
 </html>

@@ -1,139 +1,182 @@
 * {
-    font-family: 'Syne', sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: "Syne", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
+  width: 0;
+  background: transparent;
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.911);
-    display:flex;
-    flex-wrap: wrap;  
-    scroll-behavior: smooth;  
-    
+  background-color: #cec6b6;
+  display: flex;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+  animation: bodynav ease-in-out;
+  animation-duration: 0.8s;
 }
 
 header {
-    position:fixed;
+  position: fixed;
 }
 
 nav {
-    color: cornsilk;
-    margin-left: 10px;
-    
+  margin-left: 10px;
 }
 
-header {  
-    width: 20%;
-    height: 100vh;
-    animation: bodynav ease-in-out;
-    animation-duration: 2s;
-
+header {
+  width: 20%;
+  height: 100vh;
+  animation: bodynav ease-in-out;
+  animation-duration: 0.8s;
 }
-
-
 
 #buttonback {
-    height: 20%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #clickback {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid whitesmoke;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 40px;
-    margin-top:30px;
-    
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
 }
 
 #clickback:hover {
-    animation: animationbtn infinite;
-    animation-duration: 2s;
-    transition: 1.5s;
-    font-size: 45px;
+  animation: animationbtn infinite;
+  animation-duration: 2s;
+  transition: 1.5s;
+  font-size: 45px;
 }
 
-@keyframes  animationbtn {
-    25% {border: 6px   double whitesmoke;}
-    50% {border: 8px   solid whitesmoke ;}
-    75% {border: 10px  double whitesmoke}
-    100% {border: 6px solid whitesmoke;}
+@keyframes animationbtn {
+  25% {
+    border: 6px double rgb(144, 137, 137);
+  }
+  50% {
+    border: 8px solid rgb(13, 9, 9);
+  }
+  75% {
+    border: 10px double rgb(236, 229, 229);
+  }
+  100% {
+    border: 6px solid rgb(224, 93, 93);
+  }
 }
 
 @keyframes bodynav {
-    0% {background: cornsilk;opacity: 0%;}
-   60% {background: cornsilk;opacity: 70%;}
-    to {}
-
-}
-
-#contact {
-    font-size: 4vw;
+  0% {
+    background: cornsilk;
+    opacity: 0%;
+  }
+  60% {
+    background: cornsilk;
+    opacity: 70%;
+  }
+  to {
+  }
 }
 
 main {
-    width: 80%;
-    height: 100vh;
-    font-size: 2.5vw;
-    color: cornsilk;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20%;
-    flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  font-size: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  flex-direction: column;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
 }
 
 fieldset {
-    border-radius: 5px;
+  border-radius: 5px;
+}
+article {
+  display: flex;
+}
+
+hr {
+  height: 100%;
+  width: 1px;
+  margin-inline: 10px;
 }
 
 input {
-    border-radius: 5px;
+  border-radius: 5px;
+  width: 250px;
+  height: 25px;
+}
+p {
+  font-size: 1.3vw;
+}
+textarea {
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 800px;
 }
 
-textarea {
-    border-radius: 5px;
-    text-align:center;
-    text-decoration: none;
+.submit {
+  margin: 10px;
+  width: 100px;
 }
 
 #envoyer {
-    color: white;
-    background: rgb(60 58 58 / 91%);
+  color: white;
+  background: rgb(60 58 58 / 91%);
 }
 
 #experience {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 70vh;
-    color: cornsilk;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  color: cornsilk;
 }
 
 h1 {
-    align-items: center;
-    color: cornsilk;
-    width: 100%;
+  color: cornsilk;
+  font-size: 4vw;
+  margin-bottom: 10px;
 }
 
 a {
-    color: unset;
-    text-decoration: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+@media screen and (max-width: 800px) {
+  textarea {
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+  }
+  p {
+    font-size: 2.2vw;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
 }
